@@ -1,0 +1,18 @@
+services:
+  app:
+    image: springboot-app
+    container_name: measurement
+    build:
+      context: .
+      dockerfile: /devops/docker/java/Dockerfile
+    volumes:
+      - .:/home/measurement:rw
+      - ./target:/home/measurement/target:rw
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - DEBUG=true
+      - PORT_DEBUG=5005
+    ports:
+      - "8080:8080"
+      - "8000:8000"
+      - "5005:5005"
