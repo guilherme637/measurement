@@ -19,7 +19,7 @@ public class MileToOrYard extends ResultCalculatorAbstract {
 
         if (
             dto.getUnitFrom().equals(LengthEnum.YARD.getValue())
-            && dto.getUnitTo().equals(LengthEnum.METER.getValue())
+            && dto.getUnitTo().equals(LengthEnum.MILE.getValue())
         ) {
             return strategy.invertMeasurement(dto.getNumber());
         }
