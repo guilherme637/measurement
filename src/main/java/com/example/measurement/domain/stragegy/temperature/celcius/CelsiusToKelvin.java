@@ -10,6 +10,6 @@ public class CelsiusToKelvin implements CalculateStrategy {
 
     @Override
     public double invertMeasurement(Double value) {
-        return value - 273.15;
+        return Math.round(value - 273.15);
     }
 }
