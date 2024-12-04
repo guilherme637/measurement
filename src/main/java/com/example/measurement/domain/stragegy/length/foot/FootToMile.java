@@ -5,7 +5,7 @@ import com.example.measurement.domain.stragegy.CalculateStrategy;
 public class FootToMile implements CalculateStrategy {
     @Override
     public Double calculate(Double value) {
-        return value / 5280;
+        return value * 0.000189393939394;
     }
 
     @Override

@@ -10,6 +10,6 @@ public class MileToYard implements CalculateStrategy {
 
     @Override
     public double invertMeasurement(Double value) {
-        return value / 1760;
+        return value * 0.000568181818182;
     }
 }
