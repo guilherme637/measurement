@@ -1,4 +1,4 @@
-package com.example.measurement.service.length;
+package com.example.measurement.service.weight;
 
 
 import com.example.measurement.domain.service.length.LegthService;
@@ -6,13 +6,14 @@ import com.example.measurement.domain.service.length.LengthServiceInterface;
 import com.example.measurement.presentation.dto.measurement.MeasurementRequestDto;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ArgumentsSource;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class LegthServiceTest {
+public class WeightServiceTest {
 
     @ParameterizedTest
-    @ArgumentsSource(LengthProvider.class)
+    @ArgumentsSource(WeightProvider.class)
     public void calculateTest(String from, String to, Double number, Double result) {
         MeasurementRequestDto measurementRequestDto = new MeasurementRequestDto();
         measurementRequestDto.setNumber(number);

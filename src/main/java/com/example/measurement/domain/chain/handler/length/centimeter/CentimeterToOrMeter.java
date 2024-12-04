@@ -12,13 +12,13 @@ public class CentimeterToOrMeter extends ResultCalculatorAbstract {
 
         if (
             dto.getUnitFrom().equals(LengthEnum.CENTIMETER.getValue())
-            && dto.getUnitTo().equals(LengthEnum.KILOMETER.getValue())
+            && dto.getUnitTo().equals(LengthEnum.METER.getValue())
         ) {
             return strategy.calculate(dto.getNumber());
         }
 
         if (
-            dto.getUnitFrom().equals(LengthEnum.KILOMETER.getValue())
+            dto.getUnitFrom().equals(LengthEnum.METER.getValue())
             && dto.getUnitTo().equals(LengthEnum.CENTIMETER.getValue())
         ) {
             return strategy.invertMeasurement(dto.getNumber());

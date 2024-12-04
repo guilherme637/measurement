@@ -1,4 +1,4 @@
-package com.example.measurement.service.length;
+package com.example.measurement.service.temperature;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.provider.Arguments;
