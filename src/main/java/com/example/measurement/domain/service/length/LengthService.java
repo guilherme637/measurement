@@ -14,7 +14,7 @@ import com.example.measurement.presentation.dto.measurement.MeasurementResponseD
 import org.springframework.stereotype.Service;
 
 @Service
-public class LegthService implements LengthServiceInterface{
+public class LengthService implements LengthServiceInterface{
     public MeasurementResponseDto calculate(MeasurementRequestDto dto) {
         ResultCalculatorAbstract chain = ResultCalculatorAbstract.add(
             new MillimeterToOrCentimeter(),

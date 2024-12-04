@@ -1,7 +1,7 @@
 package com.example.measurement.service.temperature;
 
 
-import com.example.measurement.domain.service.length.LegthService;
+import com.example.measurement.domain.service.length.LengthService;
 import com.example.measurement.domain.service.length.LengthServiceInterface;
 import com.example.measurement.presentation.dto.measurement.MeasurementRequestDto;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -20,7 +20,7 @@ public class LegthServiceTest {
         measurementRequestDto.setUnitFrom(from);
         measurementRequestDto.setUnitTo(to);
 
-        LengthServiceInterface lengthService = new LegthService();
+        LengthServiceInterface lengthService = new LengthService();
         System.out.println(from);
         System.out.println(to);
 
