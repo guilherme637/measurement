@@ -4,11 +4,11 @@ import lombok.Getter;
 
 @Getter
 public enum WeightEnum {
-    MILLIGRAM("Millimeter", "mg"),
-    GRAM("Centimeter", "g"),
-    KILOGRAM("Meter", "kg"),
-    OUNCE("Kilometer", "oz"),
-    POUND("Inch", "lb");
+    MILLIGRAM("Milligram", "mg"),
+    GRAM("Gram", "g"),
+    KILOGRAM("Kilogram", "kg"),
+    OUNCE("Ounce", "oz"),
+    POUND("Pound", "lb");
 
     private final String value;
     private final String abbreviation;
